@@ -10,4 +10,4 @@ chart    = "podinfo"
 version  = "6.7.0"
 
 [[values_file]]
-path = "./values/whoami.yaml"
+contents = "./values/whoami.yaml"
