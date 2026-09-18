@@ -1,0 +1,13 @@
+# action
+name    = "echo"
+timeout = "30s"
+
+[[triggers]]
+type = "manual"
+
+[[steps]]
+name            = "echo_install"
+inline_contents = """
+#!/usr/bin/env sh
+echo "hello from install ${NUON_INSTALL_ID}"
+"""

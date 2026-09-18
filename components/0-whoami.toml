@@ -1,0 +1,13 @@
+# helm
+name       = "whoami"
+type       = "helm_chart"
+chart_name = "whoami"
+namespace  = "whoami"
+
+[helm_repo]
+repo_url = "https://podinfo.github.io/podinfo"
+chart    = "podinfo"
+version  = "6.7.0"
+
+[[values_file]]
+path = "./values/whoami.yaml"

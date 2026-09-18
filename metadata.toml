@@ -1,0 +1,4 @@
+version      = "v2"
+display_name = "Demo Branches App"
+description  = "Demo app for browsing app branches: helm component with referenced files, policy, runbook, permissions, and an action."
+readme       = "./README.md"

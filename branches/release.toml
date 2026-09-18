@@ -1,0 +1,12 @@
+name = "release"
+
+[public_repo]
+repo      = "RealHarshThakur/demo-app-branches"
+directory = "."
+branch    = "release"
+
+[[install_groups]]
+name  = "prod"
+order = 1
+[install_groups.label_selector]
+env = "prod"

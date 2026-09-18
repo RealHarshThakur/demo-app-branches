@@ -1,0 +1,15 @@
+name        = "health_check"
+description = "Runs a post-deploy verification check."
+readme      = "./runbooks/health-check.md"
+
+[labels]
+service = "whoami"
+type    = "verification"
+
+[[steps]]
+name            = "verify_release"
+inline_contents = """
+#!/usr/bin/env sh
+set -e
+echo "demo verification step for install ${NUON_INSTALL_ID}"
+"""
